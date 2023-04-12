@@ -1,0 +1,98 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.contenedorDetalle {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .imagenDetalle {
+        width: 200px;
+        height: 200px;
+    }
+
+    .contenedorP {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 50px;
+    }
+}
+
+
+.contenedorProductos {
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 50px;
+
+    .contenedorItems {
+        width: 250px;
+        display: grid;
+        grid-template-rows: 60px 60px 60px 200px 60px 60px 50px;
+        align-items: center;
+        margin: auto;
+        text-align: center;
+        border: 1px solid;
+        border-color: white;
+        border-radius: 20px;
+
+        .nombreItem {
+            font-size: 20px;
+        }
+
+        .marcaItem {
+            span {
+                color: orangered;
+            }
+        }
+
+        .categoriaItem {
+            .colorCategoriaItem {
+                color: chocolate;
+            }
+        }
+
+        .imgItem {
+            width: 200px;
+            height: 200px;
+            margin: auto;
+        }
+
+        .precioItem {
+            .numeroItem {
+                color: brown;
+            }
+        }
+
+        .botonAgregarItem {
+            width: 150px;
+            height: 50px;
+            margin: auto;
+            color: black;
+            cursor: pointer;
+        }
+
+        .detalle {
+            margin: auto;
+            width: 150px;
+            height: 25px;
+            background-color: gold;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .detalle:hover {
+            border: 1px solid;
+        }
+    }
+
+    .contenedorItems:hover {
+        border: 1px solid;
+        border-color: black;
+        border-radius: 20px;
+    }
+}

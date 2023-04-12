@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.contenedorNavbar {
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: chocolate;
+
+    div{
+        margin: auto;
+    }
+
+    .logo {
+       
+        position: relative;
+
+        img {
+            height: 70px;
+            width: 170px;
+        }
+    }
+
+    .productos{
+        a{
+            color: white;
+            text-decoration: none;
+            font-family: serif;
+        }
+    }
+
+    .carrito{
+        button{
+            width: 200px;
+            height: auto;
+            background-color: white;
+            cursor: pointer;
+
+            p{
+                margin: 5px 0;
+
+                .contador{
+                    color: blueviolet;
+                }
+            }
+
+            
+        }
+    }
+}
